@@ -48,7 +48,7 @@ This repository serves as a centralized hub specifically for my **Intermediate P
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h3>💻 <a href="./Codechum">Codechum</a></h3>
+      <h3>💻 <a href="https://codechum.com/">Codechum</a></h3>
       <p>Platform exercises, algorithm drills, and repetitive coding challenges.</p>
       <p><sub><code>Practice</code> • <a href="./Codechum">View Files ↗</a></sub></p>
     </td>
