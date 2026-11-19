@@ -36,14 +36,14 @@ This repository serves as a centralized hub specifically for my **Intermediate P
 <table>
   <tr>
     <td width="50%" valign="top">
-     <a href="https://github.com/lerumgabriel/lerumgabriel/tree/main/LABTASK/MIDTERM" target="_blank" class="project-card">
+      <h3>📁 <a href="https://github.com/lerumgabriel/lerumgabriel/tree/main/LABTASK/MIDTERM">Labtask Midterm</a></h3>
       <p>Midterm arrays, logic formulation, and early programming laboratory assignments.</p>
-      <p><sub><code>Coursework</code> • <a href="./Labtask-Midterm">View Files ↗</a></sub></p>
+      <p><sub><code>Coursework</code> • <a href="https://github.com/lerumgabriel/lerumgabriel/tree/main/LABTASK/MIDTERM">View Files ↗</a></sub></p>
     </td>
     <td width="50%" valign="top">
-       <a href="https://github.com/lerumgabriel/lerumgabriel/tree/main/LABTASK/FINALS" target="_blank" class="project-card">
+      <h3>📁 <a href="https://github.com/lerumgabriel/lerumgabriel/tree/main/LABTASK/FINALS">Labtask Final</a></h3>
       <p>Final programming requirements, advanced logic applications, and algorithms.</p>
-      <p><sub><code>Coursework</code> • <a href="./Labtask-Final">View Files ↗</a></sub></p>
+      <p><sub><code>Coursework</code> • <a href="https://github.com/lerumgabriel/lerumgabriel/tree/main/LABTASK/FINALS">View Files ↗</a></sub></p>
     </td>
   </tr>
   <tr>
