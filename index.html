@@ -23,7 +23,7 @@
             padding: 0;
             line-height: 1.6;
             
-            /* SNEZHNAYA BACKGROUND + SOFT VIGNETTE */
+           
             background-image: radial-gradient(circle at center, rgba(13, 17, 23, 0.35) 0%, rgba(13, 17, 23, 0.78) 100%), 
                               url('cyberpunk.gif'); 
             background-size: cover;
@@ -237,6 +237,10 @@
             100% { background-position: 0% 50%; }
         }
 
+        @keyframes waveMove {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-4px); }
+        }
         .cyber-led-text {
             background: linear-gradient(90deg, #00e5ff, #ff007f, #9d00ff, #00e5ff);
             background-size: 300% auto;
@@ -244,10 +248,11 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
-            animation: cyberFlow 4s linear infinite;
+            animation: cyberFlow 4s linear infinite, waveMove 1.5s ease-in-out infinite;
             filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.5));
             display: inline-block;
         }
+
 
         .music-btn {
             position: fixed;
