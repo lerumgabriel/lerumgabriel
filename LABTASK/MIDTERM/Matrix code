@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        // 3D array: 2 Sections, 3 Students per section, 3 Subjects per student
+        int[][][] grades = new int[2][3][3];
+        String[] subjects = {"Java", "Database", "Networking"};
+        
+        System.out.println("Enter the student grades below:\n");
+        
+        // Input values using nested FOR Loops
+        for (int section = 0; section < grades.length; section++) {
+            System.out.println("SECTION " + (section + 1));
+            for (int student = 0; student < grades[section].length; student++) {
+                System.out.println("Student " + (student + 1));
+                for (int subject = 0; subject < grades[section][student].length; subject++) {
+                    System.out.print(subjects[subject] + ": ");
+                    grades[section][student][subject] = sc.nextInt();
+                }
+            }
+        }
+        
+        System.out.println("\n====================================");
+        System.out.println("       GRADE REPORT");
+        System.out.println("====================================\n");
+        
+        // Display grades and calculate averages
+        for (int section = 0; section < grades.length; section++) {
+            System.out.println("SECTION " + (section + 1));
+            
+            double sectionTotal = 0;
+            int totalSubjectsInSection = grades[section].length * grades[section][0].length; 
+            
+            for (int student = 0; student < grades[section].length; student++) {
+                System.out.println("Student " + (student + 1));
+                
+                double studentTotal = 0;
+                
+                for (int subject = 0; subject < grades[section][student].length; subject++) {
+                    int grade = grades[section][student][subject];
+                    System.out.println(subjects[subject] + ": " + grade);
+                    
+                    studentTotal += grade;
+                    sectionTotal += grade;
+                }
+                
+                // Calculate and display student average
+                double studentAverage = studentTotal / grades[section][student].length;
+                System.out.printf("Student Average: %.2f\n", studentAverage);
+            }
+            
+            // Calculate and display section average
+            double sectionAverage = sectionTotal / totalSubjectsInSection;
+            System.out.printf("Section Average: %.2f\n", sectionAverage);
+            System.out.println();
+        }
+        
+        sc.close();
+    }
+}
